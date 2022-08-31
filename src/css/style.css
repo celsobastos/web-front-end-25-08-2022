@@ -10,7 +10,6 @@
 .container {
     width: 90%;
     margin: 0 auto;
-    background-color: aquamarine;
 }
 
 .barra-contato {
@@ -32,14 +31,25 @@
     margin-left: 8px;
 }
 
+.navbar {
+    border-bottom: 0px solid #000;
+    box-shadow: 1px 1px 2px rgb(104, 104, 104);
+}
+
 .menu {
-    background-color: blueviolet;
     display: flex;
+    justify-content: space-between;
+    /* border-left: 2px dotted black; */
 }
 
 .center-menu {
     display: flex;
     list-style-type: none;
+}
+
+.center-menu a {
+    padding: 5px;
+    display: block;
 }
 
 .navegacao {
@@ -48,11 +58,18 @@
 }
 
 .navegacao > a {
-    background-color: blue;
     width: 20%;
 }
 
 .navegacao > div {
-    background-color: brown;
     width: 80%;
+}
+
+.logo {
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    font-size: 3rem;
+    font-family: 'Oleo Script', cursive;
+    color: rgb(0, 136, 90);
 }
