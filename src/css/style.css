@@ -58,13 +58,25 @@
 }
 
 .center-menu a {
-  text-decoration: none;
-  color: rgb(14, 141, 0);  
+    text-decoration: none;
+    color: rgb(14, 141, 0);  
+    /* text-shadow: -6px 1px 3px #000; */
 }
 
 .center-menu a:hover {
-    color: blue;
+    color: rgb(0, 179, 96);
+    /* font-weight: bold; */
+    /* text-shadow: 6px 1px 5px #000; */
     /* text-decoration: underline; */
+    /* text-transform: uppercase; */
+}
+
+.center-menu a:active {
+    color: red;
+}
+
+.center-menu a:visited {
+    color: rgb(108, 0, 100);
 }
 
 .center-menu li {
@@ -74,9 +86,8 @@
 .center-menu li:hover { 
     /* background-color: aquamarine; */
     /* box-shadow: 1px -2px 5px #000 ; */
-    border-bottom: #000 2px solid;
+    border-bottom: rgb(49, 49, 49) 1px solid;
 }
-
 
 .navegacao {
     display: flex;
@@ -98,4 +109,5 @@
     font-size: 3rem;
     font-family: 'Oleo Script', cursive;
     color: rgb(0, 136, 90);
+    /* text-shadow: 1px 1px 1px red, 2px 2px 2px blue; */
 }
