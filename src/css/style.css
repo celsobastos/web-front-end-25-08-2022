@@ -42,15 +42,41 @@
     /* border-left: 2px dotted black; */
 }
 
+.menu > div:first-child {
+    width: 80%;
+}
+
+.menu > div:last-child {
+    width: 20%;
+}
+
 .center-menu {
-    display: flex;
     list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .center-menu a {
-    padding: 5px;
-    display: block;
+  text-decoration: none;
+  color: rgb(14, 141, 0);  
 }
+
+.center-menu a:hover {
+    color: blue;
+    /* text-decoration: underline; */
+}
+
+.center-menu li {
+    padding: 30px;
+}
+
+.center-menu li:hover { 
+    /* background-color: aquamarine; */
+    /* box-shadow: 1px -2px 5px #000 ; */
+    border-bottom: #000 2px solid;
+}
+
 
 .navegacao {
     display: flex;
