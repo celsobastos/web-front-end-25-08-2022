@@ -196,13 +196,17 @@ html {
     background-color: rgb(213, 106, 106);
     border: #000 2px solid;
     width: 50%;
-    height: 350px;
     font-size: 0.8rem;
     position: relative;
  }
 
  .produtos {
     display: flex;
+ }
+
+ img.curolagy {
+    width: 100%;
+    height: auto;
  }
 
  /* .e-comerce {
