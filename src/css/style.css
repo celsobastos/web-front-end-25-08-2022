@@ -1,3 +1,7 @@
+:root {
+    --fundo-section: #efefef;
+}
+
 * {
     margin: 0;
 }
@@ -8,7 +12,7 @@ html {
 
 .header {
     background-color: rgb(38, 32, 32);
-    color: #fff;
+    color: var(--fundo-section);
     /* position: fixed;
     width: 100%; */
 }
@@ -199,7 +203,7 @@ html {
 }
 
 .main-header {
-     background-color: #efefef;
+     background-color: var(--fundo-section);
  }
 
  .produtos {

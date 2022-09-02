@@ -11,29 +11,52 @@
     width: 200px;
     height: 200px;
     margin: auto;
-    border-radius: 200px;
-    background: radial-gradient(#a5a5c3, #0101db);
+    /* border-radius: 200px; */
+    /* background: radial-gradient(#a5a5c3, #0101db); */
+    background-color: aqua;
     position: absolute;
-    left: 0;
+    left: 50%;
     bottom: 0;
+    opacity: 1;
+    transform: rotate(0deg);
     animation-name: bolinha-azul;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-iteration-count: 2;
     animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-
+    animation-timing-function: ease;
+    animation-direction: alternate;
 }
 
 @keyframes bolinha-azul {
-    from {
+    0% {
         position: absolute;
-        left:0;
+        left:50%;
         bottom: 0;
+        background-color: aqua;
+        opacity: 1;
+        transform: rotate(0deg);
     }
 
-    to {
+    50% {
         position: absolute;
-        left: 500px;
-        bottom: 0;
+        left:0;
+        background-color: rgb(0, 24, 24);
+        opacity: 0;
+        transform: rotate(190deg);
+    }
+
+    75% {
+        position: absolute;
+        left:150%;
+        background-color: rgb(255, 0, 221);
+        opacity: 1;
+    }
+
+    100% {
+        position: absolute;
+        left: 50%;
+        bottom: 400px;
+        background-color: #000;
+        opacity: 0.5;
     }
 }
