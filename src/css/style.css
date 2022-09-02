@@ -204,12 +204,42 @@ html {
 
  .produtos {
     display: flex;
+    font-family: 'Roboto Mono', monospace;
  }
 
  img.curolagy {
     margin: auto;
     width: 100%;
     height: auto;
+ }
+
+ .h1 {
+    text-align: left;
+    font-size: 3rem;
+    color: #4d7959;
+    margin-bottom: 40px;
+ }
+
+ .h1 span {
+    font-weight: bold;
+    border: rgb(0, 240, 208) solid 2px;
+    border-radius: 0 20px 0 20px;
+ }
+
+ .descricao {
+    padding: 100px 30px;
+ }
+
+ .descricao p {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: justify;
+    line-height: 40px;
+ }
+
+ .descricao .sub-titulo {
+    font-size: 2rem;
+    padding-bottom: 10px;
  }
 
  /* .e-comerce {
