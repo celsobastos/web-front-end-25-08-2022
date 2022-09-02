@@ -3,4 +3,37 @@
     position: absolute;
     bottom: 120px;
     height: auto;
+    width: 100%;
+}
+
+.bolinha {
+    /* border: #000 solid 1px; */
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 200px;
+    background: radial-gradient(#a5a5c3, #0101db);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation-name: bolinha-azul;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes bolinha-azul {
+    from {
+        position: absolute;
+        left:0;
+        bottom: 0;
+    }
+
+    to {
+        position: absolute;
+        left: 500px;
+        bottom: 0;
+    }
 }
