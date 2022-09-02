@@ -227,7 +227,7 @@ html {
  }
 
  .descricao {
-    padding: 100px 30px;
+    padding: 35px 30px;
  }
 
  .descricao p {
@@ -259,3 +259,9 @@ html {
     bottom: 75px;
     z-index: 2;
  } */
+
+ /* barras */
+ .barras {
+    background-color: #4d7959;
+    height: 100px;
+ }
