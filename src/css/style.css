@@ -262,6 +262,44 @@ html {
 
  /* barras */
  .barras {
-    background-color: #4d7959;
     height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
  }
+
+ .barras div {
+    height: 10px;
+    margin: 0 1px;
+    width: 90px;
+    background-color: #333;
+    cursor: pointer;
+    transition-property: height;
+    transition-duration: 1s;
+    /* transition-delay: 1s; */
+    transition-timing-function: ease-in-out;
+ }
+
+ .barras div:hover {
+    height: 90px;
+ }
+
+ .barras div:nth-of-type(1) {
+    background-color: aqua;
+    transition-property: background-color;
+    transition-duration: 2s;
+ }
+ .barras div:nth-of-type(1):hover { 
+    background-color: #f61010;
+ }
+
+ .barras div:nth-of-type(3) {
+    background-color: aqua;
+    transition-property: background-color;
+    transition-duration: 2s;
+ }
+ .barras div:nth-of-type(3):hover { 
+    background-color: #30f000;
+ }
+
+
