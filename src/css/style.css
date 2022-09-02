@@ -192,12 +192,14 @@ html {
 */
 
 /* Produtos Header */
- .produto {
-    background-color: rgb(213, 106, 106);
-    border: #000 2px solid;
+.produto {
     width: 50%;
     font-size: 0.8rem;
     position: relative;
+}
+
+.main-header {
+     background-color: #efefef;
  }
 
  .produtos {
@@ -205,6 +207,7 @@ html {
  }
 
  img.curolagy {
+    margin: auto;
     width: 100%;
     height: auto;
  }
