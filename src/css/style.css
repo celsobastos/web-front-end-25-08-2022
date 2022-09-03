@@ -1,5 +1,6 @@
 :root {
     --fundo-section: #efefef;
+    --height-barras: 10px;
 }
 
 * {
@@ -215,7 +216,23 @@ html {
     margin: auto;
     width: 100%;
     height: auto;
+    animation-name: curolagy;
+    opacity: 1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
  }
+
+ @keyframes curolagy {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
 
  .h1 {
     text-align: left;
@@ -273,7 +290,7 @@ html {
  }
 
  .barras div {
-    height: 10px;
+    height: var(--height-barras);
     margin: 0 1px;
     width: 90px;
     background-color: #333;
@@ -290,20 +307,50 @@ html {
 
  .barras div:nth-of-type(1) {
     background-color: aqua;
-    transition-property: background-color;
-    transition-duration: 2s;
+    transition-property: height;
+    transition-duration: 100ms;;
+    height: calc(var(--height-barras) + 5px);
  }
  .barras div:nth-of-type(1):hover { 
     background-color: #f61010;
+    height: calc(var(--height-barras) + 50px);
+ }
+
+ .barras div:nth-of-type(2) {
+    background-color: aqua;
+    transition-property: height;
+    transition-duration: 1ms;
+    height: calc(var(--height-barras) + 10px);
+ }
+ .barras div:nth-of-type(2):hover { 
+    background-color: #f61010;
+    height: calc(var(--height-barras) + 50px);
  }
 
  .barras div:nth-of-type(3) {
     background-color: aqua;
-    transition-property: background-color;
-    transition-duration: 2s;
+    transition-property: height;
+    transition-duration: 1ms;
+    height: calc(var(--height-barras) + 15px);
  }
  .barras div:nth-of-type(3):hover { 
     background-color: #30f000;
  }
+
+ .barras div:nth-of-type(4) {
+    background-color: aqua;
+    transition-property: height;
+    transition-duration: 1ms;
+    height: calc(var(--height-barras) + 20px);
+ }
+
+ .barras div:nth-of-type(5) {
+    background-color: aqua;
+    transition-property: height;
+    transition-duration: 1ms;
+    height: calc(var(--height-barras) + 30px);
+ }
+
+/* Animation */
 
 
