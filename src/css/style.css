@@ -217,20 +217,20 @@ html {
     width: 100%;
     height: auto;
     animation-name: curolagy;
-    opacity: 1;
-    animation-duration: 2s;
+    opacity: 1; /* 0 - 0.1 - 0.2 ... 1 */
+    animation-duration: 300ms;
     animation-iteration-count: infinite;
     animation-timing-function: ease;
     animation-direction: alternate;
  }
 
- @keyframes curolagy {
+@keyframes curolagy {
     0% {
         opacity: 1;
     }
 
     100% {
-        opacity: 0.5;
+        opacity: 0.7;
     }
 }
 
@@ -290,9 +290,9 @@ html {
  }
 
  .barras div {
-    height: var(--height-barras);
+    height: calc(var(--height-barras) + 10px);
     margin: 0 1px;
-    width: 90px;
+    width: calc(90px - 10px);
     background-color: #333;
     cursor: pointer;
     transition-property: height;
@@ -351,6 +351,25 @@ html {
     height: calc(var(--height-barras) + 30px);
  }
 
-/* Animation */
+/* Categoria de Produtos */
+
+.row {
+    width: 50%;
+    background-color: #f61010;
+}
+
+@media screen and (min-width: 700px) {
+    .row {
+        width: 100%;
+        background-color: #103af6;
+    }
+}
 
 
+
+/* Footer */
+footer {
+    background: linear-gradient(rgb(19, 0, 102),rgb(0, 0, 174));
+    height: 300px;
+    width: 100%;
+}
