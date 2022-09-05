@@ -348,9 +348,19 @@ html {
  }
 
 /* Categoria de Produtos */
+.categorias {
+    background-color: var(--fundo-section);
+}
 .container {
     width: 100%;
     margin: 0 auto;
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
 .row {
