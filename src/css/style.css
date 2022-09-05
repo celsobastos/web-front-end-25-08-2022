@@ -353,19 +353,52 @@ html {
 
 /* Categoria de Produtos */
 
+
+
 .row {
-    width: 50%;
-    background-color: #f61010;
+    width: 100%;
+    background-color: #42dc00;
 }
 
-@media screen and (min-width: 700px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) {
     .row {
-        width: 100%;
-        background-color: #103af6;
+        width: 90%;
+        background-color: #070555;
     }
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .row {
+        width: 80%;
+        background-color: #68ca00;
+    }
+}
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .row {
+        width: 70%;
+        background-color: #ec04be;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .row {
+        width: 60%;
+        background-color: #ff8800;
+    }
+}
+
+/* Extra Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+    .row {
+        width: 50%;
+        background-color: #00d69a;
+    }
+}
 
 /* Footer */
 footer {
