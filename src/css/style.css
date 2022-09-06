@@ -40,78 +40,59 @@ html {
     margin-left: 8px;
 }
 
-.navbar {
+/* Menu de navegação resposnsive */
+
+
+/* .navbar {
     border-bottom: 0px solid #000;
     box-shadow: 1px 1px 2px rgb(104, 104, 104);
     background-color: rgba(0, 0, 0, 0.123);
 }
-
 .menu {
     display: flex;
     justify-content: space-between;
-    /* border-left: 2px dotted black; */
 }
-
 .menu > div:first-child {
     width: 80%;
 }
-
 .menu > div:last-child {
     width: 20%;
 }
-
 .center-menu {
     list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: space-evenly;
 }
-
 .center-menu a {
     text-decoration: none;
     color: rgb(14, 141, 0);  
-    /* text-shadow: -6px 1px 3px #000; */
 }
-
 .center-menu a:hover {
     color: rgb(0, 179, 96);
-    /* font-weight: bold; */
-    /* text-shadow: 6px 1px 5px #000; */
-    /* text-decoration: underline; */
-    /* text-transform: uppercase; */
 }
-
 .center-menu a:active {
     color: red;
 }
-
 .center-menu a:visited {
     color: rgb(108, 0, 100);
 }
-
 .center-menu li {
     padding: 30px;
 }
-
 .center-menu li:hover { 
-    /* background-color: aquamarine; */
-    /* box-shadow: 1px -2px 5px #000 ; */
     border-bottom: rgb(49, 49, 49) 1px solid;
 }
-
 .navegacao {
     display: flex;
     justify-content: center;
 }
-
 .navegacao > a {
     width: 20%;
 }
-
 .navegacao > div {
     width: 80%;
 }
-
 .logo {
     text-decoration: none;
     display: block;
@@ -119,8 +100,9 @@ html {
     font-size: 3rem;
     font-family: 'Oleo Script', cursive;
     color: rgb(0, 136, 90);
-    /* text-shadow: 1px 1px 1px red, 2px 2px 2px blue; */
-}
+} */
+
+/* Fim menu de navegação */
 
 /* Testando background e radius*/
 /* .imagem {
