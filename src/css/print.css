@@ -1,0 +1,11 @@
+nav {
+    display: block;
+}
+
+@page {
+    margin: 3cm;
+}
+
+.imagem-produto {
+    display: none;
+} 

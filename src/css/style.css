@@ -473,9 +473,23 @@ html {
 
 }
 
+/* Icones de acesso */
+.row-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+        
+    border: #000 1px solid;
+}
+
+
+
 /* Footer */
 footer {
     background: linear-gradient(rgb(19, 0, 102),rgb(0, 0, 174));
     height: 300px;
     width: 100%;
 }
+
+
