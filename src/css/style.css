@@ -364,6 +364,29 @@ html {
     height: auto;
 }
 
+.botao {
+    display: block;
+    line-height: 25px;
+    color: #dee2e6;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 8px 2px;
+    border-radius: 6px;
+    transition: color 2s ease-in-out;
+    background-color: #4d7959;
+}
+
+.botao:hover {
+    color: #36563f;
+}
+
+.acesso {
+    margin: auto;
+    width: 50%;
+}
+
 .format-image {
     border-radius: 50%;
     border: 1px solid #dee2e6;
