@@ -10,6 +10,7 @@
 
 html {
     font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .header {
@@ -205,7 +206,6 @@ html {
 
  .produtos {
     display: flex;
-    font-family: 'Roboto Mono', monospace;
  }
 
  img.curolagy {
@@ -348,10 +348,30 @@ html {
  }
 
 /* Categoria de Produtos */
-
+.h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+}
+.categoria-descricao {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px 50px;
+    line-height: 35px;
+}
 .img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
+}
+
+.format-image {
+    border-radius: 50%;
+    border: 1px solid #dee2e6;
+}
+
+.format-image:hover {
+    opacity: 0.3;
+    border: #000 1px solid;
 }
 
 .categorias {
@@ -372,10 +392,15 @@ html {
 .row {
     display: flex;
     flex-wrap: wrap;
+    padding: 50px 0;
 }
 
 [class*="col"] {
     width: 100%;
+}
+
+.padding {
+    padding: 0 2.5rem;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
