@@ -1,5 +1,15 @@
 "use strict"
 
+
+
+
+
+
+// localStorage.setItem('contador', 1);
+// let cont = localStorage.getItem('contador');
+// console.log(cont);
+
+
 const $ = function (fieldName, propriedade = '') {
     return document.querySelector("." + fieldName);
 }
@@ -32,3 +42,16 @@ secao.addEventListener('change', selectSection);
 // let lista = ['Ana', 'Jonas', 20, [7, 5, 10]];
 // let tipo = typeof lista;
 // console.log(lista[3][2]);
+
+
+
+/** Objeto literal */
+// let Pessoa = {
+//     nome: 'Cassandra',
+//     idade: 25,
+//     notas: [10, 2, 7, 8],
+//     getNotas: function (caracter) {
+//         return this.notas.join(` ${caracter} `);
+//     }
+// };
+// Pessoa.getNotas('-');
