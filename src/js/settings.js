@@ -4,9 +4,7 @@ const $ = function (fieldName, propriedade = '') {
     return document.querySelector("." + fieldName);
 }
 
-
 let objetoColor = $('barra-top-color');
-
 objetoColor.style.display = 'none';
 
 let secao = $('section');

@@ -27,12 +27,17 @@
                     <form>
                         <fieldset>
                             <legend>Configurações</legend>
-                            <div class="mb-3">
-                                <label for="section" class="form-label">Seção</label>
-                                <select id="section" class="form-select">
-                                    <option value="0">-- Escolha uma Seção --</option>
-                                    <option value="1">Barra de navegação do topo</option>
-                                </select>
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <label for="section" class="form-label">Seção</label>
+                                    <select id="section" class="form-select section">
+                                        <option value="0">-- Escolha uma Seção --</option>
+                                        <option value="1">Barra de navegação do topo</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
                             </div>
                             <!-- <div class="mb-3">
                                 <div class="form-check">
@@ -42,7 +47,7 @@
                                 </label>
                                 </div>
                             </div> -->
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            
                         </fieldset>
 
                         <div class="row">
