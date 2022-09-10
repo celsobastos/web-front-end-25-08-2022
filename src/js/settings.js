@@ -1,10 +1,14 @@
 "use strict"
 
 
+let Settings = {
+    barraTop: {
+        cor: '#000',
+    }
+}
 
-
-
-
+// console.log(Settings);
+// let convertString = JSON.stringify(Settings);
 // localStorage.setItem('contador', 1);
 // let cont = localStorage.getItem('contador');
 // console.log(cont);
@@ -13,6 +17,9 @@
 const $ = function (fieldName, propriedade = '') {
     return document.querySelector("." + fieldName);
 }
+
+
+
 
 let objetoColor = $('barra-top-color');
 objetoColor.style.display = 'none';
@@ -30,6 +37,14 @@ const selectSection = function () {
 
 }
 secao.addEventListener('change', selectSection);
+
+const botao = $('btn');
+botao.addEventListener('click', (event) => {
+    const color = $('color');
+    localStorage.setItem('color', color.value);
+    event.preventDefault();
+})
+
 
 
 /** tipos primitivos */
