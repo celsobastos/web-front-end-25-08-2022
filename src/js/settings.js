@@ -20,16 +20,15 @@ let Settings = {
 /** Converte json para Objeto */
 // JSON.parse(Settings);
 
-const $ = function (fieldName, propriedade = '') {
+const $ = function (fieldName) {
     return document.querySelector("." + fieldName);
 }
 
-let objetoColor = $('barra-top-color');
+let objetoColor = $('barra-top');
 objetoColor.style.display = 'none';
 
 let secao = $('section');
 const selectSection = function () {
-
     let secaoNumber = secao.value;
     if (secaoNumber == 1) {
         objetoColor.style.display = 'block';
@@ -37,7 +36,6 @@ const selectSection = function () {
     else {
         objetoColor.style.display = 'none';
     }
-
 }
 secao.addEventListener('change', selectSection);
 

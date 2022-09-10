@@ -27,17 +27,17 @@
                     <form>
                         <fieldset>
                             <legend>Configurações</legend>
-                            <div class="mb-3 row">
-                                <div class="col-md-6">
+                            <div class="mb-3">
+                                <div class=>
                                     <label for="section" class="form-label">Seção</label>
                                     <select id="section" class="form-select section">
                                         <option value="0">-- Escolha uma Seção --</option>
                                         <option value="1">Barra de navegação do topo</option>
                                     </select>
                                 </div>
-                                <div class="col-md-6 pt-4">
-                                    <button type="submit" class="btn btn-primary">Salvar</button>
-                                </div>
+                
+                                <button type="submit" class="btn btn-primary mt-3">Salvar</button>
+        
                             </div>
                             <!-- <div class="mb-3">
                                 <div class="form-check">
@@ -49,17 +49,18 @@
                             </div> -->
                             
                         </fieldset>
-                        <fieldset>
-                            <legend>Configurações</legend>
+                        <fieldset class="">
+                            <legend class="text-center">Configurações</legend>
                             <div class="row">
-                                <div class="col-md-9 m-auto">
-                                    <div class="barra-top-color div1">
+                                <div class="col-md-6 m-auto barra-top">
+                                    <div class="barra-top-color cor">
                                         <label for="color">Cor de Fundo</label>
-                                        <input type="color" id="color" name="color" class="color">
+                                        <input type="color" class="color form-control" id="color" name="color"  value="#0000ff">
                                     </div>
-                                    <div class="barra-top-color font">
-                                        <label for="color">Cor de Fundo</label>
-                                        <input type="range" id="color" name="color" class="color">
+                                    <div class="barra-top-color font pt-2">
+                                        <label for="color">Tamanho da Fonte</label>
+                                        <input class="form-control" type="range" name="weight" id="range_weight" value="5" min="1" max="6" oninput="range_weight_disp.value = range_weight.value">
+                                        <output  id="range_weight_disp"></output>
                                     </div>
                                 </div>
                             </div>
