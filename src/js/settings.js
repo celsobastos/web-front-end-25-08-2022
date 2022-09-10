@@ -41,8 +41,16 @@ secao.addEventListener('change', selectSection);
 
 const botao = $('btn');
 botao.addEventListener('click', (event) => {
-    const color = $('color');
-    localStorage.setItem('color', color.value);
+    const color = $('color').value;
+    const fontSize = $('font-size').innerHTML;
+
+    const dataBarraTop = {};
+    dataBarraTop.cor = color;
+    dataBarraTop.fontSize = fontSize + 'rem';
+
+    const dataJson = JSON.stringify(dataBarraTop);
+
+    localStorage.setItem('pageSettings', dataJson);
     event.preventDefault();
 })
 
