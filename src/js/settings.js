@@ -4,15 +4,21 @@
 let Settings = {
     barraTop: {
         cor: '#000',
+        font: '2rem',
     }
 }
 
 // console.log(Settings);
-// let convertString = JSON.stringify(Settings);
+
 // localStorage.setItem('contador', 1);
 // let cont = localStorage.getItem('contador');
 // console.log(cont);
 
+/** Converte Onjeto para JSON */
+// let convertString = JSON.stringify(Settings);
+
+/** Converte json para Objeto */
+// JSON.parse(Settings);
 
 const $ = function (fieldName, propriedade = '') {
     return document.querySelector("." + fieldName);
