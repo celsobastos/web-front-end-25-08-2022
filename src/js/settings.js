@@ -1,29 +1,5 @@
 "use strict"
 
-
-let Settings = {
-    barraTop: {
-        cor: '#000',
-        font: '2rem',
-    }
-}
-
-// console.log(Settings);
-
-// localStorage.setItem('contador', 1);
-// let cont = localStorage.getItem('contador');
-// console.log(cont);
-
-/** Converte Onjeto para JSON */
-// let convertString = JSON.stringify(Settings);
-
-/** Converte json para Objeto */
-// JSON.parse(Settings);
-
-const $ = function (fieldName) {
-    return document.querySelector("." + fieldName);
-}
-
 let objetoColor = $('barra-top');
 objetoColor.style.display = 'none';
 
@@ -43,17 +19,28 @@ const botao = $('btn');
 botao.addEventListener('click', (event) => {
     const color = $('color').value;
     const fontSize = $('font-size').innerHTML;
-
+    
     const dataBarraTop = {};
     dataBarraTop.cor = color;
     dataBarraTop.fontSize = fontSize + 'rem';
 
     const dataJson = JSON.stringify(dataBarraTop);
-
+    
     localStorage.setItem('pageSettings', dataJson);
     event.preventDefault();
 })
 
+// console.log(Settings);
+
+// localStorage.setItem('contador', 1);
+// let cont = localStorage.getItem('contador');
+// console.log(cont);
+
+/** Converte Onjeto para JSON */
+// let convertString = JSON.stringify(Settings);
+
+/** Converte json para Objeto */
+// JSON.parse(Settings);
 
 
 /** tipos primitivos */
