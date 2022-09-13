@@ -24,7 +24,8 @@ botao.addEventListener('click', (event) => {
     const dataBarraTop = {};
     dataBarraTop.cor = color;
     dataBarraTop.fontSize = fontSize + 'rem';
-    dataBarraTop.email = email.value.length > 5 ? email.value : 'info@company.com';
+    dataBarraTop.email = email.length > 5 ? email : 'info@company.com';
+    // dataBarraTop.contagem = "function () { return 'test 123'}";
 
     const dataJson = JSON.stringify(dataBarraTop);
     
