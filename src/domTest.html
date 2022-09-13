@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>About elk</title>
+        <style>
+            .test123 {
+                background-color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <div>The truth about elk.1</div>
+        <div>The truth about elk.2</div>
+        <div>The truth about elk.3</div>
+        <div>The truth about elk.4</div>
+        <div>The truth about elk.5</div>
+        <div>The truth about elk.6</div>
+        <script>
+            let arrayDivs = document.querySelectorAll('div');
+            arrayDivs.forEach(function(div, index) {
+                div.addEventListener('click', function () {
+                    div.classList.toggle('test123');
+                });
+            })
+            window.history.go(1)
+        </script>
+    </body>
+</html>

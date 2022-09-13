@@ -19,10 +19,12 @@ const botao = $('btn');
 botao.addEventListener('click', (event) => {
     const color = $('color').value;
     const fontSize = $('font-size').innerHTML;
+    const email = $('email').value;
     
     const dataBarraTop = {};
     dataBarraTop.cor = color;
     dataBarraTop.fontSize = fontSize + 'rem';
+    dataBarraTop.email = email.value.length > 5 ? email.value : 'info@company.com';
 
     const dataJson = JSON.stringify(dataBarraTop);
     
