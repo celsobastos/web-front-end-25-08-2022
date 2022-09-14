@@ -5,37 +5,80 @@ function aplicaConfiguracoes() {
     $('header').style.backgroundColor = settings.cor;
     $('barra-contato').style.fontSize = settings.fontSize;
     $('email a span').innerHTML = settings.email;
-    settings.contagem();
 }
 setInterval(aplicaConfiguracoes, 1000);
 
 
 /* Carrinho de compra */
-
-let Carrinho = {
-    produtos : [],
-    total_itens: function () {
-        return this.produtos.length;
+let Produto = {
+    nome: '',
+    valor: '',
+    getNome: function () {
+        return this.nome;
+    },
+    getValor: function () {
+        let valor = this.valor.replace(/R\$./gi, '');
+        return parseFloat(valor);
     }
 };
 
-
-let Cliente = function (nome) {
+let Importados = function (nome, valor) {
     this.nome = nome;
+    this.valor = valor;
+    this.calculoDeDesconto = function () {
+        return this.getValor() - this.getValor() * 0.2;
+    }
 }
 
-Cliente.prototype = Carrinho;
+let Nacionais = function (nome, valor) {
+    this.nome = nome;
+    this.valor = valor;
+    this.calculoDeDesconto = function () {
+        return this.getValor() - this.getValor() * 0.8;
+    }
+}
+
+Nacionais.prototype = Produto;
+Importados.prototype = Produto;
 
 
-let botoes = all('botao');
+// let produto1 = new Importados('Luminaria', 'R$ 50,15');
+// console.log(produto1.calculoDeDesconto());
 
-botoes.forEach(function (element, index) {
-    console.log(element.parentElement.children[1].textContent);
+let Carrinho = function() {
+    this.produtos = [];
+    this.somaTotal = function () {
+        let total = 0;
+        this.produtos.forEach(function(element) {
+            total += element.calculoDeDesconto();
+        });
+        return total;
+    };
+    this.contarProdutos = function () {
+        return this.produtos.length;
+    };
+    this.getTotal = function () {
+        return this.somaTotal();
+    }
+}
+
+let carrinho = new Carrinho();
+
+let botaoComprar = all('botao');
+botaoComprar.forEach(function (botao) {
+    botao.addEventListener('click', function() {
+        let importados = new Importados(
+            'Diversos',
+            botao.parentElement.lastElementChild.textContent
+        );
+        carrinho.produtos.push(importados);
+        $('carrinho').innerHTML = carrinho.contarProdutos();
+
+        //console.log(carrinho.contarProdutos());
+    });
 });
 
-
-
-
-
-
-
+$('carrinho').addEventListener('click', function () {
+    let total = carrinho.getTotal();
+    alert(`Total da compra: ${total}`);
+})

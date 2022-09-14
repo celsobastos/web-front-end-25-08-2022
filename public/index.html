@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="../src/css/print.css" media="print">
     <link rel="stylesheet" href="../src/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Roboto:ital,wght@0,300;1,100;1,300&display=swap" rel="stylesheet">
+    <style>
+      .carrinho {
+        background-color: black;
+        color: #fff;
+        border-radius: 50% 50% 50% 0;
+        padding: 0 8px;
+      }
+    </style>
   </head>
   <body>
     <!-- Nav de contatos -->
@@ -42,7 +50,7 @@
     <!-- fim header -->
 
     <!-- barra de navegação -->
-    <nav class="navbar">
+    <nav class="navbar" style="position:fixed; width:100%; z-index: 100">
       <div class="container">
         <div class="navegacao">
           <a href="#" class="logo">Zay</a>
@@ -65,7 +73,10 @@
                   <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
                 </div>
                 <div class="icon">
-                  <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span class="carrinho"></span>
+                  </a>
                 </div>
                 <div class="icon">
                   <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
@@ -124,7 +135,7 @@
                 </a>
                 <h3>Tenis</h3>
                 <p class="acesso">
-                  <a href="#" class="botao">Comprar</a>
+                  <a href="javascript:void(0)" class="botao">Comprar</a>
                   <span>R$ 5000,00</span>
                 </p>
             </div>
@@ -134,7 +145,7 @@
               </a>
               <h3>Perfume</h3>
               <p class="acesso">
-                <a href="#" class="botao">Comprar</a>
+                <a href="javascript:void(0)" class="botao">Comprar</a>
                 <span>R$ 400,00</span>
               </p>
             </div>
@@ -144,7 +155,7 @@
               </a>
               <h3>Luminaria</h3>
               <p class="acesso">
-                <a href="#" class="botao">Comprar</a>
+                <a href="javascript:void(0)" class="botao">Comprar</a>
                 <span>R$ 1500,00</span>
               </p>
             </div>
