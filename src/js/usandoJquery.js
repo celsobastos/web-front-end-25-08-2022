@@ -26,6 +26,12 @@ $(function() {
         },
     });
 
+    $('div').on('click', function () {
+        $(this).hide();
+    });
 
+    $('button').on('click', function () {
+        $('div').fadeOut();
+    })
 
 });
