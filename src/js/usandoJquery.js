@@ -69,6 +69,41 @@ $(function() {
     //     });
     // });
 
-    
+    // Methods Getters
+    // html, text, val 
+    // let conteudo = $('.div1').text();
+    // console.log(conteudo);
+    // //setter
+    // $('.div2').text(conteudo);
+    // let contentCaixa = $('.input-text').val();
+    // console.log(contentCaixa);
+    $('.input-text').val('Testando 123');
+    $('.input-text').on('keyup',function () {
+        let texto = $(this).val();
+        $('.contador').html(texto.length);
+        if(texto.length > 10) {
+            $(this).css({
+                backgroundColor: '#ff0000',
+            });
+        }
+        else {
+            $(this).css({
+                backgroundColor: '#fff',
+            });
+        }
+    });
+
+    // mouseout
+    $('img').on({
+        'mouseover': function() {
+            $(this).attr('src', './img/banner_img_02.jpg');
+        },
+        'mouseout': function() {
+            $(this).attr('src', './img/banner_img_01.jpg');
+        },
+    });
+
+
+    $('#cep').mask('00.000.000/0000-00', {reverse: true});
 
 });
